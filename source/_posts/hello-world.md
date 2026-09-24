@@ -1,38 +1,20 @@
 ---
-title: Hello World
+title: 你好，世界！
+date: 2026-09-24 20:00:00
+tags:
+  - 随笔
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+# 你好，世界！👋
 
-### Create a new post
+欢迎来到我的博客！这是我的第一篇文章。
 
-``` bash
-$ hexo new "My New Post"
-```
+博客用 [Hexo](https://hexo.io/zh-cn/) 搭建，托管在 GitHub Pages 上，主题是好看的 [Butterfly](https://butterfly.js.org/)。
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+以后这里会记录我的生活、学习和各种灵感，欢迎常来逛逛～
 
-### Run server
+## 博客的小目标
 
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+- [ ] 每周至少写一篇文章
+- [ ] 慢慢装修博客的样式
+- [ ] 交到更多朋友

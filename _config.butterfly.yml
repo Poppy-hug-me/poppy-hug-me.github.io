@@ -1,0 +1,81 @@
+# Butterfly 主题个性化配置（只写需要覆盖的项，其余继承主题默认值）
+
+# ---------- 导航菜单（中文） ----------
+menu:
+  主页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-user
+
+nav:
+  logo: /img/avatar.png
+  display_title: true
+  fixed: true
+
+# ---------- 社交链接 ----------
+social:
+  fab fa-github: https://github.com/Poppy-hug-me || Github || '#24292e'
+  fas fa-envelope: mailto:hello@example.com || 邮箱 || '#4a7dbe'
+
+# ---------- 头像 ----------
+avatar:
+  img: /img/avatar.png
+  effect: true   # 鼠标悬停头像旋转
+
+favicon: /img/avatar.png
+
+# ---------- 首页横幅 + 欢迎语（打字机效果） ----------
+index_img: /img/banner.svg
+index_top_img_height: 42vh
+
+subtitle:
+  enable: true
+  effect: true
+  typed_option:
+    typeSpeed: 120
+    backSpeed: 60
+    loop: true
+  sub:
+    - 欢迎来到 Poppy. 的博客 ✨
+    - 记录生活 · 分享灵感
+    - 今天也要元气满满哦 (๑•̀ㅂ•́)و✧
+
+# ---------- 渐变背景 ----------
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">
+
+# ---------- 侧边栏 ----------
+aside:
+  card_author:
+    enable: true
+    description: 记录生活与灵感
+    button:
+      enable: true
+      icon: fab fa-github
+      text: 去 GitHub 找我玩
+      link: https://github.com/Poppy-hug-me
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的小窝，常来玩呀 (❁´◡`❁)
+
+# ---------- 深色模式 ----------
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 1   # 跟随系统设置自动切换
+
+# ---------- 细节美化 ----------
+code_blocks:
+  macStyle: true      # 代码块 macOS 风格圆点
+  word_wrap: true
+
+footer:
+  owner:
+    enable: true
+    since: 2026
+  custom_text: 用 ❤️ 和 Hexo 搭建
+
+lightbox: fancybox   # 点击图片放大预览
+preloader:
+  enable: true        # 加载动画

@@ -1,0 +1,16 @@
+/* Poppy. 的博客 - 自定义样式 */
+
+/* 渐变纯色页面背景（浅色模式） */
+body {
+  background: linear-gradient(160deg, #fdfbff 0%, #e3ecf5 55%, #fbe4ef 100%) fixed !important;
+}
+
+/* 深色模式下的渐变背景 */
+[data-theme="dark"] body {
+  background: linear-gradient(160deg, #14141e 0%, #1c2333 55%, #2a1f2e 100%) fixed !important;
+}
+
+/* 顶部横幅文字加一点阴影，更好看 */
+#site-info, .top-img {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
