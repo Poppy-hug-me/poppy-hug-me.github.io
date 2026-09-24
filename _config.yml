@@ -102,3 +102,24 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Live2D 看板娘（初音未来）
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  log: false
+  model:
+    use: https://fastly.jsdelivr.net/npm/live2d-widget-model-miku@1.0.5/assets/miku.model.json
+  display:
+    position: right
+    width: 150
+    height: 300
+    vOffset: -10
+  mobile:
+    show: false
+  react:
+    opacity: 0.9

@@ -14,8 +14,3 @@ body {
 #site-info, .top-img {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
-
-/* 音乐播放器（伸缩条）避免遮挡右下角按钮 */
-.aplayer.aplayer-fixed .aplayer-body {
-  left: 0 !important;
-}
