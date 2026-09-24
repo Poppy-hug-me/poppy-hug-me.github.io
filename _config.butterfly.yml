@@ -48,8 +48,16 @@ inject:
     - <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
   bottom:
     - <script src="/js/snow.js"></script>
+    - <script src="/js/status.js"></script>
+    - <script src="/js/festival.js"></script>
     - <script src="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
     - <script src="/js/music.js"></script>
+
+# ---------- 404 页面 ----------
+error_404:
+  enable: true
+  subtitle: '糟糕！网页被猫叼走了！'
+  background: /img/404-cat.svg
 
 # ---------- 主题色（雪山蓝） ----------
 theme_color:

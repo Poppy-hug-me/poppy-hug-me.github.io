@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360">
+  <!-- 背景 -->
+  <circle cx="240" cy="180" r="160" fill="#EAF3FA"/>
+  <circle cx="240" cy="180" r="160" fill="none" stroke="#B9D8EC" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+
+  <!-- 月亮 -->
+  <circle cx="380" cy="72" r="26" fill="#FFFEF8" stroke="#F0C86B" stroke-width="3"/>
+  <circle cx="372" cy="66" r="4" fill="#F0C86B" opacity="0.5"/>
+  <circle cx="386" cy="78" r="3" fill="#F0C86B" opacity="0.4"/>
+
+  <!-- 飘着的问号 -->
+  <text x="96" y="96" font-size="30" fill="#79b3d7" font-family="Comic Sans MS, sans-serif" transform="rotate(-12 96 96)">?</text>
+  <text x="130" y="64" font-size="20" fill="#8FBEE0" font-family="Comic Sans MS, sans-serif" transform="rotate(8 130 64)">?</text>
+  <text x="404" y="180" font-size="24" fill="#8FBEE0" font-family="Comic Sans MS, sans-serif" transform="rotate(14 404 180)">?</text>
+
+  <!-- 被叼走的网页 -->
+  <g transform="rotate(-8 250 130)">
+    <rect x="180" y="52" width="160" height="120" rx="10" fill="#FFFEF8" stroke="#5a93b8" stroke-width="3"/>
+    <path d="M180 82 h160" stroke="#5a93b8" stroke-width="2.5"/>
+    <circle cx="196" cy="67" r="4" fill="#F28B82"/>
+    <circle cx="212" cy="67" r="4" fill="#F6C453"/>
+    <circle cx="228" cy="67" r="4" fill="#7BC8A4"/>
+    <!-- 右下角被咬掉一口 -->
+    <path d="M340 172 L340 140 q-14 8 -22 -4 q-12 12 -24 2 q-10 14 -24 6 L270 172 Z" fill="#EAF3FA" stroke="none"/>
+    <path d="M340 172 L340 140 q-14 8 -22 -4 q-12 12 -24 2 q-10 14 -24 6 L270 172" fill="none" stroke="#5a93b8" stroke-width="3" stroke-linejoin="round"/>
+    <!-- 网页内容线条 -->
+    <rect x="196" y="96" width="90" height="10" rx="5" fill="#B9D8EC"/>
+    <rect x="196" y="116" width="120" height="8" rx="4" fill="#D0E7F5"/>
+    <rect x="196" y="132" width="70" height="8" rx="4" fill="#D0E7F5"/>
+    <text x="196" y="164" font-size="16" fill="#5a93b8" font-family="Comic Sans MS, sans-serif" font-weight="bold">404...</text>
+  </g>
+
+  <!-- 猫（线条风格） -->
+  <g stroke="#3f6e8e" stroke-width="3.5" fill="#FFFEF8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 身体 -->
+    <path d="M200 300 q-6 -60 44 -62 q52 2 46 62 Z"/>
+    <!-- 尾巴 -->
+    <path d="M290 296 q34 -6 30 -40 q-2 -16 -16 -18" fill="none"/>
+    <!-- 左耳 -->
+    <path d="M222 244 L216 214 L242 228" />
+    <!-- 右耳 -->
+    <path d="M266 228 L292 214 L286 244"/>
+    <!-- 头 -->
+    <circle cx="254" cy="252" r="34"/>
+    <!-- 脸 -->
+    <circle cx="243" cy="248" r="3.2" fill="#3f6e8e" stroke="none"/>
+    <circle cx="266" cy="248" r="3.2" fill="#3f6e8e" stroke="none"/>
+    <path d="M249 260 q5 5 10 0" fill="none"/>
+    <!-- 胡须 -->
+    <path d="M224 254 h-16 M224 262 l-15 5 M284 254 h16 M284 262 l15 5" fill="none" stroke-width="2.5"/>
+    <!-- 叼着网页的小嘴咬合线 -->
+    <path d="M249 266 q5 4 10 0" fill="none"/>
+  </g>
+  <!-- 腮红 -->
+  <circle cx="234" cy="260" r="5" fill="#F5A9B8" opacity="0.6"/>
+  <circle cx="274" cy="260" r="5" fill="#F5A9B8" opacity="0.6"/>
+
+  <!-- 地面影子 -->
+  <ellipse cx="250" cy="308" rx="90" ry="10" fill="#B9D8EC" opacity="0.55"/>
+
+  <!-- 掉落的碎纸片 -->
+  <path d="M120 220 l14 8 -10 10 z" fill="#FFFEF8" stroke="#79b3d7" stroke-width="2"/>
+  <path d="M352 250 l12 -10 6 12 z" fill="#FFFEF8" stroke="#79b3d7" stroke-width="2"/>
+</svg>

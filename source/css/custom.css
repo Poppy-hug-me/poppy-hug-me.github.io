@@ -14,3 +14,124 @@ body {
 #site-info, .top-img {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
+
+/* ============ 头像猫耳朵（线条风格） ============ */
+/* 卡片自带 overflow:hidden，耳朵画在卡片内、悬在头像上方 */
+.card-info {
+  padding-top: 30px !important;
+}
+.card-info::before,
+.card-info::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  width: 26px;
+  height: 26px;
+  border: 3px solid #79b3d7;
+  background: transparent;
+  pointer-events: none;
+  z-index: 2;
+}
+/* 左耳：朝左上翘 */
+.card-info::before {
+  left: calc(50% - 46px);
+  border-right: none;
+  border-bottom: none;
+  border-radius: 8px 2px 0 2px;
+  transform: rotate(36deg);
+}
+/* 右耳：镜像朝右上翘 */
+.card-info::after {
+  right: calc(50% - 46px);
+  border-left: none;
+  border-bottom: none;
+  border-radius: 2px 8px 2px 0;
+  transform: rotate(-36deg);
+}
+/* 深色模式下耳朵换浅色线条 */
+[data-theme="dark"] .card-info::before,
+[data-theme="dark"] .card-info::after {
+  border-color: #8FBEE0;
+}
+
+/* ============ 当前状态卡片 ============ */
+.card-status .status-body {
+  padding: 4px 2px 2px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.card-status .status-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: 1px;
+  box-shadow: 0 0 6px currentColor;
+  animation: status-blink 2.2s ease-in-out infinite;
+}
+.card-status .status-mood {
+  margin-top: 2px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+@keyframes status-blink {
+  50% { opacity: 0.45; }
+}
+
+/* ============ 节日特效（飘落元素 + 顶部横幅） ============ */
+.festival-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 888;
+  overflow: hidden;
+}
+.festival-layer span {
+  position: absolute;
+  top: -40px;
+  animation: festival-fall linear infinite;
+}
+@keyframes festival-fall {
+  0%   { transform: translateY(-40px) translateX(0) rotate(0deg); }
+  25%  { transform: translateY(28vh) translateX(22px) rotate(90deg); }
+  50%  { transform: translateY(56vh) translateX(-18px) rotate(180deg); }
+  75%  { transform: translateY(84vh) translateX(18px) rotate(270deg); }
+  100% { transform: translateY(112vh) translateX(0) rotate(360deg); }
+}
+.festival-banner {
+  position: fixed;
+  top: 76px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 86vw;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 254, 248, 0.92);
+  border: 1.5px solid #8FBEE0;
+  box-shadow: 0 4px 18px rgba(90, 147, 184, 0.25);
+  color: #3f6e8e;
+  font-size: 14px;
+  backdrop-filter: blur(4px);
+}
+[data-theme="dark"] .festival-banner {
+  background: rgba(26, 35, 51, 0.92);
+  color: #B9D8EC;
+}
+.festival-close {
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  opacity: 0.6;
+  padding: 0 2px;
+}
+.festival-close:hover { opacity: 1; }
+
+/* ============ 404 页面微调 ============ */
+.error-content .error_title {
+  color: #3f6e8e;
+}
