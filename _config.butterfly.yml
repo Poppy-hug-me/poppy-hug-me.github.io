@@ -8,7 +8,7 @@ menu:
   关于: /about/ || fas fa-user
 
 nav:
-  logo: /img/avatar.png
+  logo: /img/avatar.jpg
   display_title: true
   fixed: true
 
@@ -19,10 +19,10 @@ social:
 
 # ---------- 头像 ----------
 avatar:
-  img: /img/avatar.png
+  img: /img/avatar.jpg
   effect: true   # 鼠标悬停头像旋转
 
-favicon: /img/avatar.png
+favicon: /img/avatar.jpg
 
 # ---------- 首页横幅 + 欢迎语（打字机效果） ----------
 index_img: /img/banner.svg
@@ -40,10 +40,31 @@ subtitle:
     - 记录生活 · 分享灵感
     - 今天也要元气满满哦 (๑•̀ㅂ•́)و✧
 
-# ---------- 渐变背景 ----------
+# ---------- 渐变背景 + 各种特效注入 ----------
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  bottom:
+    - <script src="/js/snow.js"></script>
+    - <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    - <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js" async></script>
+    - <meting-js fixed="true" mini="true" autoplay="false" list-folded="true" order="random" loop="all" preload="auto" volume="0.4" server="netease" type="playlist" id="3778678" api="https://api.injahow.cn/meting/" theme="#79b3d7"></meting-js>
+
+# ---------- 主题色（雪山蓝） ----------
+theme_color:
+  enable: true
+  main: "#79b3d7"
+  paginator: "#8FBEE0"
+  link_color: "#5a93b8"
+  scrollbar_color: "#79b3d7"
+
+# ---------- 鼠标点击烟花特效 ----------
+fireworks:
+  enable: true
+  zIndex: 9999
+  mobile: true
 
 # ---------- 侧边栏 ----------
 aside:
