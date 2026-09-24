@@ -4,6 +4,7 @@
 menu:
   主页: / || fas fa-home
   归档: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-th-large
   标签: /tags/ || fas fa-tags
   关于: /about/ || fas fa-user
 
