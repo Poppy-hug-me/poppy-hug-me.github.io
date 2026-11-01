@@ -29,6 +29,8 @@ curl（Client URL）是一款命令行的数据传输工具，支持 HTTP、HTTP
 curl -i http://example.com
 ```
 
+![curl -i 请求 example.com 返回的响应头与页面正文](/img/curl-1-get.png)
+
 实验说明：`-i` 参数会让 curl 在返回正文的同时，把响应头也一起打印出来。这样一次就能看到状态码、服务器类型、内容类型这些信息，以及下面跟着的 Example Domain 页面 HTML 源码。对刚上手的人来说，这是最直观看"一个 HTTP 响应到底长什么样"的方式。
 
 ## 操作2：curl -I 仅获取 HTTP 响应头（HEAD 请求）
@@ -39,6 +41,8 @@ curl -i http://example.com
 curl -I http://example.com
 ```
 
+![curl -I 发送 HEAD 请求返回的响应头](/img/curl-2-head.png)
+
 实验说明：`-I` 参数（大写 i）发送的是 HEAD 请求，**只返回响应头、不下载网页正文**。优点是速度更快，在渗透测试里适合批量快速探测站点是否存活、顺手拿到服务器指纹，也省流量。从返回的头里还能看到这个站点 `Allow: GET, HEAD`，也就是说它只支持 GET 和 HEAD，不支持 POST。
 
 ## 操作3：curl -X POST -d 发送 POST 表单请求
@@ -48,6 +52,8 @@ curl -I http://example.com
 ```bash
 curl -X POST -d "user=test&pass=123" http://example.com
 ```
+
+![curl -X POST -d 发送表单请求的返回结果](/img/curl-3-post.png)
 
 实验说明：
 
